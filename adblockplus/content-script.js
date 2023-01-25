@@ -41,14 +41,10 @@
 		});
 	}
 
-	var internalClock = setInterval(function(){
+	setTimeout(function(){
 		removeAdByIdOrClassAttributes(ad_ids, "#")
 		removeAdByIdOrClassAttributes(ad_classes, ".")
 		removeAdImages(ad_img_xpath)
-		console.log("internalClock function is completed");
-	}, 1000);
-	setTimeout(function(){
-		internalClock = undefined
 		console.log("internalClock function internal is end");
 	}, 3000);
 })();
